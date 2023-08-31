@@ -1,11 +1,11 @@
-const name = prompt('Enter your name:');
-const imageURL = prompt('Enter the image URL Untuk Foto Profile:');
+// const name = prompt('Enter your name:');
+// const imageURL = prompt('Enter the image URL Untuk Foto Profile:');
 
-const nameElement = document.getElementById('name');
-const imageElement = document.getElementById('userImage');
+// const nameElement = document.getElementById('name');
+// const imageElement = document.getElementById('userImage');
 
-nameElement.textContent = name;
-imageElement.src = imageURL;
+// nameElement.textContent = name;
+// imageElement.src = imageURL;
 
 // nav
 

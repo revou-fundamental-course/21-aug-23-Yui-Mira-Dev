@@ -21,7 +21,7 @@
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#">Our Profile</a>
+                    <a href="#OurProfile">Our Profile</a>
                 </li>
                 <li>
                     <a href="#">Achievement</a>
@@ -33,56 +33,82 @@
         </nav>
         <hr>
     </header>
-    
-    <section id="salam">
-        <div class="container">
-            <h3>Hi <span id="name"></span>, Welcome To Website</h3>
-            <p>Ini adalah Website latihan pertama saya</p>
-            <img id="userImage" src="" alt="">
-        </div>
-        <hr>
-    </section>
+    <main>
+        <section id="salam">
+            <div class="container">
+                <h3>Hi <span id="name"></span>, Welcome To Website</h3>
+                <p>Ini adalah Website latihan pertama saya</p>
+                <img id="userImage" src="" alt="">
+            </div>
+            <hr>
+        </section>
 
-    <section id="MessageFrom">
-        <h1>Message US</h1>
-        <div class="form-container">
-            <form name="message-form" onsubmit="return validateForm()">
-                Nama: <input type="text" placeholder="Nama" name="full-name" />
-                <br>
-
-                Tanggal Lahir:
-                <input type="date" name="birth-date">
-                <br>
-
-                <!-- Jenis Kelamin -->
-                <div class="gender-group">
-                    <span class="gender-label">Jenis Kelamin:</span>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
+        <section id="OurProfile">
+            <article class="container">
+                <div class="Profile">
+                    <div class="profile-image">
+                        <img src="https://cdn.discordapp.com/attachments/829660817573412874/1146732434734448742/WhatsApp_Image_2022-10-06_at_16.38.53.jpeg" alt="">
+                    </div>
+                    <div class="profile-details">
+                        <h2>Muhammad Ade Ilham Wahyudi</h2>
+                        <p>student</p>
+                        <p class="intro">Hey! Saya adalah Ade, seorang yang tengah merintis perjalanan di dunia pengembangan web. Saya percaya bahwa setiap baris kode adalah peluang untuk belajar dan tumbuh. Saat ini, saya sedang mengasah keterampilan di Politeknik Negeri Sriwijaya. Mari kita bersama-sama menjelajahi dunia web!</p>
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/profile.php?id=100010604971777" target="_blank"><img src="https://cdn.discordapp.com/attachments/829660817573412874/1095030855069601943/fb.png" alt="Facebook"></a></li>
+                            <li><a href="https://twitter.com/IrazawaYui" target="_blank"><img src="https://cdn.discordapp.com/attachments/829660817573412874/1095030855644229744/twiter.png" alt="Twitter"></a></li>
+                            <!-- Add more social icons as needed -->
+                        </ul>
+                    </div>
                 </div>
-                <br>
-
-                Pesan:
-                <textarea placeholder="Pesan" name="message"></textarea>
-                <br>
-                
-                <input type="submit" value="submit">
-            </form>
+            </article>
+            <hr>
+        </section>             
+    
+        <section id="MessageFrom">
+            <h1>Message US</h1>
+            <div class="form-container">
+                <form name="message-form" onsubmit="return validateForm()">
+                    Nama: <input type="text" placeholder="Nama" name="full-name" />
+                    <br>
+    
+                    Tanggal Lahir:
+                    <input type="date" name="birth-date">
+                    <br>
+    
+                    <!-- Jenis Kelamin -->
+                    <div class="gender-group">
+                        <span class="gender-label">Jenis Kelamin:</span>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <br>
+    
+                    Pesan:
+                    <textarea placeholder="Pesan" name="message"></textarea>
+                    <br>
+                    
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            
+            <h1>Message</h1>
+            <div class="result-container">
+                <p>Nama: <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                <p>Pesan: <span id="sender-messages"></span></p>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div>
+            <p class="footer">Created By Ade</p>
         </div>
-
-        <div class="result-container">
-            <p>Nama: <span id="sender-full-name"></span></p>
-            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
-            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
-            <p>Pesan: <span id="sender-messages"></span></p>
-        </div>
-    </section>
-    <hr>
-    <div>
-        <p class="footer">Created By Ade</p>
-    </div>
+    </footer>
+    
     <script src="js/index.js"></script>
 </body>
 </html>

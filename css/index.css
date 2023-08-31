@@ -155,6 +155,60 @@ section hr{
     border-radius: 25px;
 }
 
+/* profile */
+.Profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+    margin-top: 2%;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-details {
+    margin-top: 20px; 
+}
+
+.profile-details h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile-details p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.profile-details .intro {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
 /* messages */
 .form-container,
 .result-container {
