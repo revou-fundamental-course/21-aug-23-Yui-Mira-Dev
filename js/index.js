@@ -1,7 +1,7 @@
 // Get name
-// const name = prompt('Enter your name:');
-// const nameElement = document.getElementById('name');
-// nameElement.textContent = name;
+const name = prompt('Enter your name:');
+const nameElement = document.getElementById('name');
+nameElement.textContent = name;
 
 // slideshow
 let slideIndex = 0;
