@@ -69,8 +69,6 @@ document.querySelector('.close-btn').addEventListener('click', function() {
     document.querySelector('.close-btn').style.display = 'none';
 });
 
-
-
 // MessageFrom JS
 function validateForm() {
     const name = document.forms["message-form"]["full-name"].value;
