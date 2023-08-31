@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png"/>
-    <link rel="stylesheet" href="css/index.css">
     <title>My Website</title>
+    <link rel="shortcut icon" href="resource/revou-ico.webp"/>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
         <nav class="nav">
-            <a href="https://www.revou.co" target="_blank"><img class="logo" src="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png" alt="not found"></a>
+            <a href="https://www.revou.co" target="_blank"><img class="logo" src="resource/revou-ico.webp"></a>
+            <!-- menu togle -->
             <div class="menu-toggle">
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+            <!-- navigasi -->
             <ul class="nav-list">
                 <li>
                     <a href="#">Home</a>
                 </li>
                 <li>
-                    <a href="#OurProfile">Our Profile</a>
+                    <a href="#OurProfile">About</a>
                 </li>
                 <li>
                     <a href="#">Achievement</a>
@@ -34,74 +36,81 @@
         <hr>
     </header>
     <main>
-        <section id="salam">
-            <div class="container">
-                <h3>Hi <span id="name"></span>, Welcome To Website</h3>
-                <p>Ini adalah Website latihan pertama saya</p>
-                <img id="userImage" src="" alt="">
-            </div>
-            <hr>
-        </section>
-
-        <section id="OurProfile">
-            <article class="container">
-                <div class="Profile">
-                    <div class="profile-image">
-                        <img src="https://cdn.discordapp.com/attachments/829660817573412874/1146732434734448742/WhatsApp_Image_2022-10-06_at_16.38.53.jpeg" alt="">
-                    </div>
-                    <div class="profile-details">
-                        <h2>Muhammad Ade Ilham Wahyudi</h2>
-                        <p>student</p>
-                        <p class="intro">Hey! Saya adalah Ade, seorang yang tengah merintis perjalanan di dunia pengembangan web. Saya percaya bahwa setiap baris kode adalah peluang untuk belajar dan tumbuh. Saat ini, saya sedang mengasah keterampilan di Politeknik Negeri Sriwijaya. Mari kita bersama-sama menjelajahi dunia web!</p>
-                        <ul class="social-icons">
-                            <li><a href="https://www.facebook.com/profile.php?id=100010604971777" target="_blank"><img src="https://cdn.discordapp.com/attachments/829660817573412874/1095030855069601943/fb.png" alt="Facebook"></a></li>
-                            <li><a href="https://twitter.com/IrazawaYui" target="_blank"><img src="https://cdn.discordapp.com/attachments/829660817573412874/1095030855644229744/twiter.png" alt="Twitter"></a></li>
-                            <!-- Add more social icons as needed -->
-                        </ul>
+        <article>
+            <section id="salam">
+                <div class="container">
+                    <h3>Hi <span id="name"></span>, Welcome To MyWebsite</h3>
+                    <p>Ini adalah Website latihan pertama saya</p>
+                    <!-- slideshow -->
+                    <div class="slideshow-container">
+                        <img class="img-slideshow" src="resource/wallpaperbetter.jpg" onclick="plusDivs(1)">
+                        <img class="img-slideshow" src="resource/wallpaperbetter (1).jpg" onclick="plusDivs(1)">
+                        <img class="img-slideshow" src="resource/wallpaperbetter (2).jpg" onclick="plusDivs(1)">
+                        <img class="img-slideshow" src="resource/wallpaperbetter (3).jpg" onclick="plusDivs(1)">
                     </div>
                 </div>
-            </article>
-            <hr>
-        </section>             
+                <hr>
+            </section>
     
-        <section id="MessageFrom">
-            <h1>Message US</h1>
-            <div class="form-container">
-                <form name="message-form" onsubmit="return validateForm()">
-                    Nama: <input type="text" placeholder="Nama" name="full-name" />
-                    <br>
-    
-                    Tanggal Lahir:
-                    <input type="date" name="birth-date">
-                    <br>
-    
-                    <!-- Jenis Kelamin -->
-                    <div class="gender-group">
-                        <span class="gender-label">Jenis Kelamin:</span>
-                        <input type="radio" id="male" name="gender" value="male">
-                        <label for="male">Male</label>
-                        <input type="radio" id="female" name="gender" value="female">
-                        <label for="female">Female</label>
+            <section id="OurProfile">
+                    <div class="Profile container">
+                        <div class="profile-image">
+                            <img src="resource/Profile.jpeg">
+                        </div>
+                        <div class="profile-details">
+                            <h2>Muhammad Ade Ilham Wahyudi</h2>
+                            <p>student</p>
+                            <p class="intro">Hey! Saya adalah Ade, seorang yang tengah merintis perjalanan di dunia pengembangan web. Saya percaya bahwa setiap baris kode adalah peluang untuk belajar dan tumbuh. Saat ini, saya sedang mengasah keterampilan di Politeknik Negeri Sriwijaya. Mari kita bersama-sama menjelajahi dunia web!</p>
+                            <!-- contanct -->
+                            <h3>Contact Us</h3>
+                            <ul class="social-icons">
+                                <li><a href="https://www.facebook.com/profile.php?id=100010604971777" target="_blank"><img src="resource/fb.png" alt="Facebook"></a></li>
+                                <li><a href="https://twitter.com/IrazawaYui" target="_blank"><img src="resource/twiter.png" alt="Twitter"></a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <br>
-    
-                    Pesan:
-                    <textarea placeholder="Pesan" name="message"></textarea>
-                    <br>
-                    
-                    <input type="submit" value="submit">
-                </form>
-            </div>
-            
-            <h1>Message</h1>
-            <div class="result-container">
-                <p>Nama: <span id="sender-full-name"></span></p>
-                <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
-                <p>Jenis Kelamin: <span id="sender-gender"></span></p>
-                <p>Pesan: <span id="sender-messages"></span></p>
-            </div>
-        </section>
-        <hr>
+                <hr>
+            </section>             
+        
+            <section id="MessageFrom">
+                <h1>Message US</h1>
+                <div class="form-container">
+                    <form name="message-form" onsubmit="return validateForm()">
+                        Nama: <input type="text" placeholder="Nama" name="full-name" />
+                        <br>
+        
+                        Tanggal Lahir:
+                        <input type="date" name="birth-date">
+                        <br>
+        
+                        <!-- Jenis Kelamin -->
+                        <div class="gender-group">
+                            <span class="gender-label">Jenis Kelamin:</span>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <br>
+        
+                        Pesan:
+                        <textarea placeholder="Pesan" name="message"></textarea>
+                        <br>
+                        
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+                
+                <h1>Message</h1>
+                <div class="result-container">
+                    <p>Nama: <span id="sender-full-name"></span></p>
+                    <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                    <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                    <p>Pesan: <span id="sender-messages"></span></p>
+                </div>
+            </section>
+            <hr>
+        </article>
     </main>
     <footer>
         <div>
